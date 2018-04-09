@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+	var num1 = prompt("Give me a number for the first roll (1-6)");
+	var num1prse = parseInt(num1,10);
+	if (num1 <= 0 || num1 >= 7)
+	{
+		num1 = prompt("That's not between 1 and 6! Enter a number again:");
+		var num1prse = parseInt(num1,10);
+	}
+	if (num1 <= 0 || num1 >= 7)
+	{
+		console.log("You don't follow the rules!! Run the program again!!");
+	}
+	else
+	{
+	var num2 = prompt("Give me a number for the second roll (1-6)");
+	var num2prse = parseInt(num2,10);
+	if (num2 <= 0 || num2 >= 7)
+	{
+		num2 = prompt("That's not between 1 and 6! Enter a number again:");
+		var num2prse = parseInt(num2,10);
+	}
+	if (num2 <= 0 || num2 >= 7)
+	{
+		console.log("You don't follow the rules!! Run the program again!!");
+	}
+	else
+	{
+	var total = (num1prse +num2prse);
+	
+	console.log("The sum of the two rolls is: " +total + ".");
+	}
+	}
+</script>
+</body>
+</html>
